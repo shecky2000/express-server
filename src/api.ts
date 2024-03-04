@@ -20,5 +20,10 @@ api.get('/hello', (req, res) => {
   res.status(200).send({ message: 'hello world' });
 });
 
+api.get('/rumble_out', (req, res) => {
+  res.status(200).send({ message: 'complete' });
+});
+
+
 // Version the api
 app.use('/api/v1', api);
